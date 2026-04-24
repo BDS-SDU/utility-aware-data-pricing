@@ -186,6 +186,10 @@ python scripts/plot_real_multidomain_matplotlib.py
 | CodeXGLue Python | 代码摘要 | `google/code_x_glue_ct_code_to_text` |
 
 
+## 免责声明
+
+本仓库为**研究原型**，仅供学术研究和教育目的使用，**不适用于生产或工业场景**。
+
 ## 许可证
 
 本项目基于 [MIT License](LICENSE) 许可。

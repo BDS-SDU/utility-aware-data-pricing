@@ -186,6 +186,10 @@ The `DynamicDataValuationPipeline` accepts two key weight tuples:
 | CodeXGLue Python | Code summarization | `google/code_x_glue_ct_code_to_text` |
 
 
+## Disclaimer
+
+This repository is a **research prototype** provided for academic and educational purposes only. It is **not intended for production or industrial use**.
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
