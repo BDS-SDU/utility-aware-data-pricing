@@ -1,0 +1,10 @@
+id,condition,rho_or_effect,perm_p,ci95,verdict
+C5,noise floor: 410m seed stability (mean pairwise pooled rho),0.237,,,interpretive
+C1-pythia-70m,seed-avg pythia-70m -> seed-avg 410m (pooled rho),0.302,0.0845,"[-0.089, 0.746]",not established
+C1-pythia-160m,seed-avg pythia-160m -> seed-avg 410m (pooled rho),0.255,0.1289,"[-0.235, 0.672]",not established
+C2-L0 proxy gain,L0 proxy gain -> seed-avg 410m (pooled rho),-0.032,0.5487,"[-0.547, 0.449]",not established
+C2-DQS,DQS -> seed-avg 410m (pooled rho),0.325,0.0743,"[-0.223, 0.651]",not established
+C2-token count,token count -> seed-avg 410m (pooled rho),-0.015,0.5151,"[-0.431, 0.449]",not established
+C3-L0 proxy,L0 proxy: top-2/8 hits (chance=1.5) & sign AUC,"hits=1/6, AUC=0.35",0.8459,,not established
+C3-pythia-70m,pythia-70m: top-2/8 hits (chance=1.5) & sign AUC,"hits=4/6, AUC=0.74",0.0235,,HOLDS
+C3-pythia-160m,pythia-160m: top-2/8 hits (chance=1.5) & sign AUC,"hits=4/6, AUC=0.64",0.0241,,HOLDS

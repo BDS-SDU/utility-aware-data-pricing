@@ -1,0 +1,157 @@
+{
+  "pre_registered_criteria": "pooled Spearman permutation p<0.05 (C1/C2); top-k perm p<0.05 and AUC>0.6 (C3)",
+  "n_sources": 24,
+  "n_seeds": 5,
+  "verdicts": [
+    {
+      "id": "C5",
+      "condition": "noise floor: 410m seed stability (mean pairwise pooled rho)",
+      "rho_or_effect": 0.237,
+      "perm_p": null,
+      "ci95": null,
+      "verdict": "interpretive"
+    },
+    {
+      "id": "C1-pythia-70m",
+      "condition": "seed-avg pythia-70m -> seed-avg 410m (pooled rho)",
+      "rho_or_effect": 0.302,
+      "perm_p": 0.0845,
+      "ci95": [
+        -0.089,
+        0.746
+      ],
+      "verdict": "not established"
+    },
+    {
+      "id": "C1-pythia-160m",
+      "condition": "seed-avg pythia-160m -> seed-avg 410m (pooled rho)",
+      "rho_or_effect": 0.255,
+      "perm_p": 0.1289,
+      "ci95": [
+        -0.235,
+        0.672
+      ],
+      "verdict": "not established"
+    },
+    {
+      "id": "C2-L0 proxy gain",
+      "condition": "L0 proxy gain -> seed-avg 410m (pooled rho)",
+      "rho_or_effect": -0.032,
+      "perm_p": 0.5487,
+      "ci95": [
+        -0.547,
+        0.449
+      ],
+      "verdict": "not established"
+    },
+    {
+      "id": "C2-DQS",
+      "condition": "DQS -> seed-avg 410m (pooled rho)",
+      "rho_or_effect": 0.325,
+      "perm_p": 0.0743,
+      "ci95": [
+        -0.223,
+        0.651
+      ],
+      "verdict": "not established"
+    },
+    {
+      "id": "C2-token count",
+      "condition": "token count -> seed-avg 410m (pooled rho)",
+      "rho_or_effect": -0.015,
+      "perm_p": 0.5151,
+      "ci95": [
+        -0.431,
+        0.449
+      ],
+      "verdict": "not established"
+    },
+    {
+      "id": "C3-L0 proxy",
+      "condition": "L0 proxy: top-2/8 hits (chance=1.5) & sign AUC",
+      "rho_or_effect": "hits=1/6, AUC=0.35",
+      "perm_p": 0.8459,
+      "ci95": null,
+      "verdict": "not established"
+    },
+    {
+      "id": "C3-pythia-70m",
+      "condition": "pythia-70m: top-2/8 hits (chance=1.5) & sign AUC",
+      "rho_or_effect": "hits=4/6, AUC=0.74",
+      "perm_p": 0.0235,
+      "ci95": null,
+      "verdict": "HOLDS"
+    },
+    {
+      "id": "C3-pythia-160m",
+      "condition": "pythia-160m: top-2/8 hits (chance=1.5) & sign AUC",
+      "rho_or_effect": "hits=4/6, AUC=0.64",
+      "perm_p": 0.0241,
+      "ci95": null,
+      "verdict": "HOLDS"
+    }
+  ],
+  "noise_floor_c5": {
+    "pythia-70m": {
+      "mean_pairwise_rho": 0.48,
+      "min": 0.319
+    },
+    "pythia-160m": {
+      "mean_pairwise_rho": 0.364,
+      "min": 0.163
+    },
+    "pythia-410m": {
+      "mean_pairwise_rho": 0.237,
+      "min": -0.023
+    }
+  },
+  "per_domain_c4": {
+    "proxy_gain": {
+      "code_summarization": {
+        "rho": -0.333,
+        "p": 0.4198
+      },
+      "general_instruction": {
+        "rho": 0.119,
+        "p": 0.7789
+      },
+      "math_reasoning": {
+        "rho": 0.071,
+        "p": 0.8665
+      }
+    },
+    "pythia-70m": {
+      "code_summarization": {
+        "rho": 0.69,
+        "p": 0.058
+      },
+      "general_instruction": {
+        "rho": 0.595,
+        "p": 0.1195
+      },
+      "math_reasoning": {
+        "rho": -0.333,
+        "p": 0.4198
+      }
+    },
+    "pythia-160m": {
+      "code_summarization": {
+        "rho": 0.548,
+        "p": 0.16
+      },
+      "general_instruction": {
+        "rho": 0.262,
+        "p": 0.5309
+      },
+      "math_reasoning": {
+        "rho": -0.071,
+        "p": 0.8665
+      }
+    }
+  },
+  "median_abs_gain": {
+    "pythia-70m": 0.064360258,
+    "pythia-160m": 0.043496384,
+    "pythia-410m": 0.021875391
+  }
+}

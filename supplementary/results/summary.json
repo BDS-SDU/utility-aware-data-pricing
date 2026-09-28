@@ -1,0 +1,89 @@
+{
+  "pooled_spearman_vs_410m": {
+    "proxy gain (L0)": {
+      "rho": 0.414,
+      "p": 0.08778525139466084
+    },
+    "DQS": {
+      "rho": -0.174,
+      "p": 0.48883870995933687
+    },
+    "row count": {
+      "rho": NaN,
+      "p": NaN
+    },
+    "token count": {
+      "rho": -0.267,
+      "p": 0.28360817850986736
+    },
+    "pythia-70m": {
+      "rho": 0.187,
+      "p": 0.4579894347688285
+    },
+    "pythia-160m": {
+      "rho": 0.397,
+      "p": 0.10253523912493744
+    }
+  },
+  "per_domain_mean_rho": {
+    "proxy_gain (paper L0)": 0.352,
+    "pythia-160m": 0.314,
+    "unified (fixed)": 0.295,
+    "pythia-70m": 0.257,
+    "influence": 0.143,
+    "shapley": 0.01,
+    "token count": -0.162,
+    "DQS": -0.2,
+    "row count": NaN
+  },
+  "sign_stability": {
+    "70m_vs_410m": 0.6111111111111112,
+    "160m_vs_410m": 0.5555555555555556,
+    "proxy_vs_410m": 0.3888888888888889
+  },
+  "alpha_pairwise_median": 0.7982436584364476,
+  "alpha_ols_median": -0.763074959084001,
+  "gain_shrink_410m_vs_70m_median_ratio": 0.32458956956235685,
+  "top_sources": [
+    {
+      "domain": "code_summarization",
+      "proxy_gain (paper L0)": "codexglue_python_shard_05",
+      "DQS": "codexglue_python_shard_01",
+      "influence": "codexglue_python_shard_04",
+      "shapley": "codexglue_python_shard_01",
+      "unified (fixed)": "codexglue_python_shard_01",
+      "row count": "codexglue_python_shard_00",
+      "token count": "codexglue_python_shard_03",
+      "pythia-70m": "codexglue_python_shard_03",
+      "pythia-160m": "codexglue_python_shard_03",
+      "pythia-410m": "codexglue_python_shard_02"
+    },
+    {
+      "domain": "general_instruction",
+      "proxy_gain (paper L0)": "alpaca_instruction_shard_04",
+      "DQS": "alpaca_instruction_shard_02",
+      "influence": "alpaca_instruction_shard_01",
+      "shapley": "alpaca_instruction_shard_01",
+      "unified (fixed)": "alpaca_instruction_shard_02",
+      "row count": "alpaca_instruction_shard_00",
+      "token count": "alpaca_instruction_shard_04",
+      "pythia-70m": "alpaca_instruction_shard_05",
+      "pythia-160m": "alpaca_instruction_shard_01",
+      "pythia-410m": "alpaca_instruction_shard_02"
+    },
+    {
+      "domain": "math_reasoning",
+      "proxy_gain (paper L0)": "gsm8k_math_shard_00",
+      "DQS": "gsm8k_math_shard_02",
+      "influence": "gsm8k_math_shard_04",
+      "shapley": "gsm8k_math_shard_01",
+      "unified (fixed)": "gsm8k_math_shard_04",
+      "row count": "gsm8k_math_shard_00",
+      "token count": "gsm8k_math_shard_02",
+      "pythia-70m": "gsm8k_math_shard_04",
+      "pythia-160m": "gsm8k_math_shard_05",
+      "pythia-410m": "gsm8k_math_shard_05"
+    }
+  ],
+  "n_sources": 18
+}
