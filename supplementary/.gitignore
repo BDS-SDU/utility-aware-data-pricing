@@ -1,0 +1,6 @@
+# CodeXGLUE parquet download cache (~300 MB)
+data/_codexglue_cache/
+# HF / torch caches
+.cache/
+__pycache__/
+*.pyc

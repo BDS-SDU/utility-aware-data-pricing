@@ -1,0 +1,47 @@
+[
+  {
+    "dataset": "alpaca_instruction",
+    "domain": "general_instruction",
+    "train": 120,
+    "val": 32,
+    "shards": {
+      "alpaca_instruction_shard_00": 20,
+      "alpaca_instruction_shard_01": 20,
+      "alpaca_instruction_shard_02": 20,
+      "alpaca_instruction_shard_03": 20,
+      "alpaca_instruction_shard_04": 20,
+      "alpaca_instruction_shard_05": 20
+    },
+    "mean_chars": 401.67763157894734
+  },
+  {
+    "dataset": "gsm8k_math",
+    "domain": "math_reasoning",
+    "train": 120,
+    "val": 32,
+    "shards": {
+      "gsm8k_math_shard_00": 20,
+      "gsm8k_math_shard_01": 20,
+      "gsm8k_math_shard_02": 20,
+      "gsm8k_math_shard_03": 20,
+      "gsm8k_math_shard_04": 20,
+      "gsm8k_math_shard_05": 20
+    },
+    "mean_chars": 548.0723684210526
+  },
+  {
+    "dataset": "codexglue_python",
+    "domain": "code_summarization",
+    "train": 120,
+    "val": 32,
+    "shards": {
+      "codexglue_python_shard_00": 20,
+      "codexglue_python_shard_01": 20,
+      "codexglue_python_shard_02": 20,
+      "codexglue_python_shard_03": 20,
+      "codexglue_python_shard_04": 20,
+      "codexglue_python_shard_05": 20
+    },
+    "mean_chars": 1202.9605263157894
+  }
+]

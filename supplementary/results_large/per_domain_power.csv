@@ -1,0 +1,4 @@
+,proxy_gain,pythia-70m,pythia-160m
+code_summarization,"{'rho': -0.333, 'p': 0.4198}","{'rho': 0.69, 'p': 0.058}","{'rho': 0.548, 'p': 0.16}"
+general_instruction,"{'rho': 0.119, 'p': 0.7789}","{'rho': 0.595, 'p': 0.1195}","{'rho': 0.262, 'p': 0.5309}"
+math_reasoning,"{'rho': 0.071, 'p': 0.8665}","{'rho': -0.333, 'p': 0.4198}","{'rho': -0.071, 'p': 0.8665}"

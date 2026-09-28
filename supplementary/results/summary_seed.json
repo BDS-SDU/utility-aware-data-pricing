@@ -1,0 +1,59 @@
+{
+  "seed_stability": [
+    {
+      "scale": "pythia-70m",
+      "seed17_vs_seed43_per_domain_rho": [
+        -0.657,
+        0.371,
+        -0.371
+      ],
+      "seed17_vs_seed43_mean_rho": -0.219,
+      "seed17_vs_seed43_pooled_rho": -0.294,
+      "seed17_vs_seed43_pooled_p": 0.23614329729664102,
+      "sign_agreement": 1.0
+    },
+    {
+      "scale": "pythia-160m",
+      "seed17_vs_seed43_per_domain_rho": [
+        0.714,
+        0.086,
+        0.257
+      ],
+      "seed17_vs_seed43_mean_rho": 0.352,
+      "seed17_vs_seed43_pooled_rho": 0.3,
+      "seed17_vs_seed43_pooled_p": 0.22595992422709757,
+      "sign_agreement": 0.7222222222222222
+    },
+    {
+      "scale": "pythia-410m",
+      "seed17_vs_seed43_per_domain_rho": [
+        0.543,
+        0.086,
+        -0.771
+      ],
+      "seed17_vs_seed43_mean_rho": -0.048,
+      "seed17_vs_seed43_pooled_rho": -0.096,
+      "seed17_vs_seed43_pooled_p": 0.7048123642968973,
+      "sign_agreement": 0.7777777777777778
+    }
+  ],
+  "cross_scale_seed_averaged": {
+    "proxy_gain_vs_410m_seedavg": {
+      "rho": 0.236,
+      "p": 0.34510124880977866
+    },
+    "pythia70m_vs_410m_seedavg": {
+      "rho": -0.04,
+      "p": 0.8740147776078566
+    },
+    "pythia160m_vs_410m_seedavg": {
+      "rho": 0.319,
+      "p": 0.1971279138888988
+    },
+    "pythia70m_vs_160m_seedavg": {
+      "rho": -0.079,
+      "p": 0.7539561864360347
+    }
+  },
+  "n_sources": 18
+}
